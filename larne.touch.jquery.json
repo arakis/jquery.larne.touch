@@ -1,0 +1,28 @@
+{
+    "name": "larne.touch",
+    "title": "larne.touch",
+    "description": "This library is a wrapper for touch events. It simulates mouse events.",
+    "keywords": [
+        "touch",
+        "mouse",
+        "events"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Sebastian Loncar",
+        "url": "http://loncar.de"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/Arakis/jquery.larne.touch/blob/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/Arakis/jquery.larne.touch/issues",
+    "homepage": "https://github.com/Arakis/jquery.larne.touch",
+    "docs": "https://github.com/Arakis/jquery.larne.touch",
+    "download": "https://raw.githubusercontent.com/Arakis/jquery.larne.touch/master/jquery.larne.touch.js",
+    "dependencies": {
+        "jquery": ">=2.0"
+    }
+}
