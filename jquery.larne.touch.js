@@ -29,6 +29,7 @@ $(document).ready(function () {
 	var debug = false;
 
 	var log = function (txt) {
+		if(!debug) return;
 		var txt = (++logCount) + " " + txt;
 		console.log(txt);
 		$("#log").prepend(txt + "<br>");
@@ -280,9 +281,11 @@ $(document).ready(function () {
 			if (type === "mousewheel") {
 				jQuery.event.special[type].handle = function (event) {
 					if (type === "mousewheel")
-						if (event.wheelDelta.originalEvent) {
+						if (event.originalEvent) {
 							if (event.wheelDelta === undefined) {
 								event.wheelDelta = event.originalEvent.wheelDelta;
+								event.wheelDeltaX = event.originalEvent.wheelDeltaX;
+								event.wheelDeltaY = event.originalEvent.wheelDeltaY;
 							}
 						}
 					return event.handleObj.handler.apply(this, arguments);;
